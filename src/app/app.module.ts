@@ -7,7 +7,7 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { LogoComponent } from './logo/logo.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
-
+import {MaterialModule} from './material/material.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
