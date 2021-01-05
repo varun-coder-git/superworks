@@ -1,4 +1,8 @@
 <mat-toolbar color="primary">
-  <span class="fill-remaining-space">Superworks</span>
+  <mat-toolbar-row>
+    <button mat-flat-button color="primary" routerLink="/">Superworks</button>
+    <span class="example-spacer"></span>
+    <img src="../assets/images/cart.png" width="30px" height="30px">
+    <button mat-flat-button color="primary" routerLink="/shoppingcart">Shopping Cart - {{totalItems}} Items</button>
+  </mat-toolbar-row>
 </mat-toolbar>
-  

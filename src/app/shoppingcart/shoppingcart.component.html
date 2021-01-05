@@ -1,1 +1,20 @@
-<p>shoppingcart works!</p>
+<app-topbar [totalItems]="productArray.length"></app-topbar>
+<app-logo></app-logo>
+<mat-card>
+  <mat-card-content>
+    <h1 align="center">Shopping Cart Details</h1>
+    <h2 align="right">Total Products:{{total}} </h2>
+    <table>
+      <tr>
+        <th>Product Image</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+      <tr *ngFor="let item of productArray">
+        <td> <img src={{img_url}}{{item.p_img}} height=70px width=70px></td>
+        <td>{{item.p_name}}</td>
+        <td>{{item.p_price}}</td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>
