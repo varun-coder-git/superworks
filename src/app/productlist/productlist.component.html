@@ -7,7 +7,7 @@
         <img src={{img_url}}{{item.p_img}} height="300px" width="400px">
         <br>
         <h2>{{item.p_name}}</h2>
-        <h3>{{item.p_price}}</h3>
+        <h3>₹{{item.p_price}}</h3>
         <button mat-raised-button color="warn" [disabled]="checkProductInCart(item.p_id)"
           (click)="onAddToCart(item.p_id)">Add to Cart</button>
       </mat-card-content>

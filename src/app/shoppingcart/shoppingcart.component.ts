@@ -13,16 +13,19 @@ export class ShoppingcartComponent implements OnInit {
   productArray = [];
   img_url = "../../assets/images/";
    total:number;
+   total_price:number=0;
   constructor(private prodService: ProductService) { }
 
   ngOnInit(): void {
 
     this.ary = JSON.parse(localStorage.getItem('cartProducts'));
-
+    
     this.total=this.ary.length;
-
+    
     // this.all_products = this.prodService.onGet();
     this.cartProducts();
+
+    
   }
   cartProducts() {
     let cart_products = localStorage.getItem('cartProducts') ? JSON.parse(localStorage.getItem('cartProducts')) : []
@@ -39,6 +42,9 @@ export class ShoppingcartComponent implements OnInit {
         }
       })
       console.log(this.productArray);
+      for (let i = 0; i < this.productArray.length; i++) {
+        this.total_price=this.total_price+this.productArray[i].p_price;
+       }
       return this.productArray;
     }
   }

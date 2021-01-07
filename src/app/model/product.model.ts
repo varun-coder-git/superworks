@@ -3,6 +3,6 @@ export class Product{
     public p_name:string;
     public p_dsc:string;
     public p_img:string;
-    public p_price:string;
+    public p_price:number;
 
 }

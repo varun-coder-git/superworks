@@ -11,7 +11,7 @@ export class ProductService {
     "p_name": "Check Print Shirt",
     "p_dsc": "description1",
     "p_img": "shirt.png",
-    "p_price": "₹1200"
+    "p_price": 1200
   },
 
   {
@@ -19,7 +19,7 @@ export class ProductService {
     "p_name": "Gloria High Logo Sneaker",
     "p_dsc": "description2",
     "p_img": "gloria.jpg",
-    "p_price": "₹1100"
+    "p_price": 1100
   },
 
   {
@@ -27,7 +27,7 @@ export class ProductService {
     "p_name": "Cate Rigid Bag",
     "p_dsc": "description3",
     "p_img": "bag.jpg",
-    "p_price": "₹2800"
+    "p_price": 2800
   },
 
   {
@@ -35,7 +35,7 @@ export class ProductService {
     "p_name": "Hooded SweatShirt",
     "p_dsc": "description4",
     "p_img": "hoodie.jpg",
-    "p_price": "₹1500"
+    "p_price": 1500
   },
 
   {
@@ -43,7 +43,7 @@ export class ProductService {
     "p_name": "H & M Men's Jacket",
     "p_dsc": "description5",
     "p_img": "jacket.jpeg",
-    "p_price": "₹2700"
+    "p_price": 2700
   },
 
   {
@@ -51,7 +51,7 @@ export class ProductService {
     "p_name": "Red Tape Sports Shoe",
     "p_dsc": "description6",
     "p_img": "shoes.jpg",
-    "p_price": "₹2900"
+    "p_price": 2900
   }
   ];
 
